@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <input type="text" id="two">
+    <button onclick="add()">click me</button>
+</body>
+</html>
+
+<script>
+    // Document.getElementById
+    // classname
+    // byname
+    // bytagname
+    // document.querySelector
+    // document.querySelectorall
+    
+
+function add(){
+
+
+  var x=  document.getElementById('one').value;
+  console.log(x);
+  
+  var y=  document.getElementById('two').value;
+  console.log(y)
+
+  var a=parseInt(x)+parseInt(y)
+    // console.log(x+y)
+    console.log(a);
+
+}
+
+</script>
