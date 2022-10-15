@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" onsubmit="return validate()">
+
+        <tr>
+            <td>name</td>
+            <td><input type="text" id="name"></td>
+           
+        </tr>
+        
+        <tr>
+            <td>password</td>
+            <td><input type="text" id="pwd"></td>
+           
+        </tr>
+        
+        <tr>
+           
+            <td><button>submit</button></td>
+           
+        </tr>
+    </form>
+</body>
+</html>
+<script>
+    function validate(){
+
+        var name= document.getElementById('name').value;
+        var pass= document.getElementById('pwd').value;
+        
+        if(name==""){
+
+            alert("palce enter name")
+            return false;
+        }
+        if(pass==""){
+
+            alert("palce enter password")
+            return false;
+        }
+    }
+</script>
