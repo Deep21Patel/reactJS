@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>map_array</h1>
+    <p id="a"></p>
+    
+</body>
+</html>
+<script>
+
+const num=[45,23,34,1,23,5,3,5]
+// const nm=num.filter(myfun)
+const nm=num.map(myfun)
+
+
+document.getElementById("a").innerHTML=nm;
+
+function myfun(vlaue,index,array){
+
+//   return  vlaue > 20;fliter
+ return vlaue *2
+}
+</script>

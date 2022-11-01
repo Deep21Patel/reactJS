@@ -44,7 +44,24 @@
         }
         else{
 
+            document.getElementById(spnid).innerHTML=""
+            return true;
             
+        }
+    }
+    function usercheck(e,spanid)
+    {
+        var name = /^[a-zA-Z]+$/
+        if(name.test(e.value))
+        {
+            document.getElementById(spnid).innerHTML=""
+            return true;
+        }
+        else{
+
+            document.getElementById(spnid).innerText="red"
+            document.getElementById(spanid).innerText="enter charctor only"
+            return false;
         }
     }
 </script>
