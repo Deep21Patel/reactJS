@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           function person(fname,lname)
+        {
+            this.fname=fname
+            this.lname=lname
+            this.age=21;
+        }
+        person.prototype.getFullname = function(){
+            return this.fname,this.lastname,this.age;
+
+        }
+
+        
+        function student(fname,lname,grade,schoolname)
+        {
+            person.call(this,fname,lname)
+            this.grade=grade;
+            this.school=schoolname;
+
+        }
+        student.prototype=new person;
+        student.constructor.prototype=new student;
+        std=new student("deep","ramani","a","xyz")
+        console.log(std);
+    </script>
+</body>
+</html>
