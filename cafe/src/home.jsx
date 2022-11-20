@@ -4,7 +4,7 @@ class home extends Component {
     render() {
         return (
             <div>
-               <h1>deep</h1> 
+               <h3>home</h3> 
             </div>
         );
     }
