@@ -14,10 +14,19 @@ import State from './state';
 import Merrige from './merrige';
 import Lifecycle from './lifeCycle';
 import Api from './api';
-
+import Fatchapi from './fatchapi'
+import ButtonClick from './buttonClick';
+import Componet from './componet';
+import UseState from './functionComponent/useState';
+import Countertask from './functionComponent/countertask'
+import UseEffact from './functionComponent/useEffact';
+import Clock from './functionComponent/clock'
+import Useref from './functionComponent/useref'
+import Rigestervalid from './functionComponent/rigestervalid';
 function header() {
 
-    const Numbers={'/home':'Home','/about':'About','/loops':'loops','/compo':'Compo','/state':'State','/merrige':'merrige','/lifeCycle':'lifeCycle','/api':'api'}
+    const Numbers={'/home':'Home','/about':'About','/loops':'loops','/compo':'Compo','/state':'State','/merrige':'merrige','/lifeCycle':'lifeCycle','/api':'api','/fatchapi':'fatchapi','/buttonClick':'buttonClick','./componet':'componet','./UseState':'UseState','./countertask':'countertask','/useEffact':'useEffact','/clock':'clock','/useref':'useref','/Rigestervalid':'Rigestervalid'}
+    
     const returndata = Object.entries(Numbers).map((res,i)=>{
         return   <li className="nav-item">
         <Link className="nav-link" to={res[0]}>{res[1]}</Link>
@@ -50,6 +59,15 @@ function header() {
     <Route path='/merrige' element={<Merrige></Merrige>}></Route>
     <Route path='/LifeCycle' element={<Lifecycle></Lifecycle>}></Route>
     <Route path='/Api' element={<Api></Api>}></Route>
+    <Route path='/fatchapi' element={<Fatchapi></Fatchapi>}></Route>
+    <Route path='/buttonClick' element={<ButtonClick></ButtonClick>}></Route>
+    <Route path='/Componet' element={<Componet></Componet>}></Route>
+    <Route path='/UseState' element={<UseState></UseState>}></Route>
+    <Route path='/Countertask' element={<Countertask></Countertask>}></Route>
+    <Route path='/UseEffact' element={<UseEffact></UseEffact>}></Route>
+    <Route path='/Clock'      element={<Clock></Clock>}></Route>
+    <Route path='/Useref'      element={<Useref></Useref>}></Route>
+    <Route path='/Rigestervalid'      element={<Rigestervalid></Rigestervalid>}></Route>
 
 
 </Routes>

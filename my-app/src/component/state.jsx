@@ -5,8 +5,8 @@ class state extends Component {
     constructor(props){
         super(props)
         this.state={
-            author:"chetan bhagat",
-            book:"three idiots"
+            author:"",
+            book:"*20"
         }
 
     }
